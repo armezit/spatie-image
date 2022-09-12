@@ -51,7 +51,7 @@ class Image
      */
     public function useImageDriver(string $imageDriver): static
     {
-        if (! in_array($imageDriver, ['gd', 'imagick'])) {
+        if (! in_array($imageDriver, ['gd', 'imagick', 'vips'])) {
             throw InvalidImageDriver::driver($imageDriver);
         }
 
