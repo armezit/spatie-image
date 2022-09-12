@@ -1,5 +1,5 @@
 {
-    "name": "spatie/image",
+    "name": "armezit/spatie-image",
     "description": "Manipulate images with an expressive API",
     "keywords": [
         "spatie",
@@ -15,12 +15,16 @@
             "role": "Developer"
         }
     ],
+    "replace": {
+        "spatie/image":"2.2.4"
+    },
     "require": {
         "php": "^8.0",
         "ext-exif": "*",
         "ext-mbstring": "*",
         "ext-json": "*",
         "league/glide": "^2.2.2",
+        "osiemsiedem/intervention-image-vips-driver": "^0.8.0",
         "spatie/image-optimizer": "^1.1",
         "spatie/temporary-directory": "^1.0|^2.0",
         "symfony/process": "^3.0|^4.0|^5.0|^6.0"
